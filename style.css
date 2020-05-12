@@ -1,0 +1,882 @@
+/* body settings */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #ECE9E6 0%, #ffffff 100%);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* HEADER */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.music__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.header {
+    width: 100%;
+    background-image: url("img/fuckoff.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ff1933;
+    height: 700px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-320 {
+    display: none;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.header__img {
+    width: 80px;
+    margin: 10px 0;
+}
+
+.header__title {
+    font-family: "Righteous", cursive;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title-320 {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    margin-left: 40px;
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+.nav__link:hover {
+    border-bottom: 3px solid #fff;
+    border-radius: 5px;
+}
+
+.burger-menu {
+    display: none;
+    width: 80px;
+    cursor: pointer;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.header__nav-link {
+    font-size: 20px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.header__nav-link:hover {
+    border-bottom: 3px solid #fff;
+    border-radius: 5px;
+}
+
+/* border */
+
+.border {
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-20/common/demo/fifa20-section-bg-demo-xl.png.adapt.1920w.png 1456w");
+}
+
+.border__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border__img {
+    width: 200px;
+}
+
+.border__h2 {
+    font-family: "Raleway", sans-serif;
+    margin: 20px 25px;
+    font-size: 20px;
+}
+
+.border__logo {
+    display: flex;
+    align-items: center;
+}
+
+/* main */
+
+.main {
+    background-image: url("https://cdn.gamingfrog.com/wp-content/uploads/2019/09/25123841/FIFA-20-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__img {
+    width: 300px;
+}
+
+.main__items {
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.main__h2 {
+    font-family: "Raleway", sans-serif;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.main__p {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.main__button {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main__button2 {
+    border: 2px solid #fff;
+    transition: transform .2s linear;
+}
+
+.main__button2:hover {
+    transform: scale(1.1);
+}
+
+.button1 {
+    background-color: #fafa20;
+    color: #222f3e;
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: transform .2s linear;
+}
+
+.button1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button2 {
+    background: none;
+    color: #fff;
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    transition: transform .2s linear;
+}
+
+.button2:hover {
+    cursor: pointer;
+}
+
+/* games */
+
+.games__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    margin: 0 25px;
+}
+
+.games__h2 {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    letter-spacing: -1px;
+    display: block;
+    padding: 30px 0;
+}
+
+.games__img__1 {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 450px;
+    z-index: 1;
+}
+
+.games__img__2 {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 450px;
+}
+
+.games__img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.games__items {
+    position: relative;
+    overflow: hidden;
+}
+
+.games__hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 59, 87, .9);
+    transition: all 1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-hover {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.img-hover-2 {
+    width: 150px;
+    transition: margin-bottom .2s linear;
+}
+
+.hover__span {
+    color: #bdc3c7;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    transition: color .1s linear;
+    padding: 5px 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.hover__span:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.games__items:hover .img-hover-2 {
+    margin-bottom: 20px;
+}
+
+.games__items:hover .img-hover {
+    opacity: 0;
+}
+
+.games__items:hover .games__hover {
+    cursor: pointer;
+    top: 0;
+}
+
+.games__img-hover {
+    transform: translateY(-20px);
+}
+
+.games__hover-h1 {
+    text-align: center;
+    font-family: "Righteous", cursive;
+    transform: translateY(-10px);
+}
+
+/* border */
+
+.subscribe {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    transition: transform .2s linear;
+}
+
+.subscribe:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.border__sub {
+    margin: 0 25px 10px;
+}
+
+/* mobile games */
+
+.mobile__img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mobile__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 25px;
+}
+
+.mobile__items {
+    max-height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile {
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Righteous", cursive;
+    font-size: 32px;
+}
+
+.img__hover {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Righteous", cursive;
+    font-size: 40px;
+    opacity: .6;
+    color: #fff;
+    transition: color .1s, transform .1s linear;
+}
+
+.mobile__logo {
+    width: 100%;
+    height: 100%;
+    transform: scale(.7);
+}
+
+.mobile__title {
+    text-align: center;
+    font-family: 'Allan', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.img__hover:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.1);
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* music */
+
+.music {
+    margin: 25px 0 0;
+}
+
+.music__title {
+    text-align: center;
+    color: #262629;
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+}
+
+.music__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 300px));
+    justify-content: center;
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 20px 0 0;
+}
+.playlist {
+    transition:transform .1s linear;
+}
+.playlist:hover {
+    transform: translateY(-10px);
+}
+.music__button {
+    text-align: center;
+   margin: 35px 0 0;
+   transition:transform .1s linear;
+}
+.see__more {
+    font-family: "Raleway",sans-serif;
+    color:#262629;
+    font-size: 22px;
+    border: 2px solid #262629;
+    padding:10px;
+    cursor: pointer;
+}
+.see__more:hover {
+    background-color: #fab80157;
+}
+.music__button:hover {
+    transform: scale(1.05);
+}
+/* news */
+
+.news {
+    margin: 100px 0 25px 0;
+}
+
+.news__h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #000;
+    font-family: 'Allan', cursive;
+}
+
+/* news intro */
+
+.intro__img {
+    width: 100%;
+}
+
+.intro__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    padding-top: 20px;
+    margin: 0 25px;
+}
+
+.intro__data {
+    color: #fafa20;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+
+.intro__block {
+    background-color: #262629;
+    transition: .2s linear;
+}
+
+.block__inner {
+    padding: 40px 24px;
+}
+
+.intro__h2 {
+    margin: 5px 0 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.intro__p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.intro__block:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 15px 10px #262629;
+}
+
+.news__button {
+    background: none;
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 20px auto;
+    transition: transform .1s linear;
+    font-family: 'Righteous', cursive;
+}
+
+.news__button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* border__footer */
+
+.border__footer {
+    background-image: url("https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-20/common/demo/fifa20-section-bg-demo-xl.png.adapt.1920w.png 1456w");
+}
+
+/* sub footer */
+
+.sub__footer {
+    background-color: #eaeaea;
+}
+
+.sub__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 25px;
+}
+
+/* .sub__header {
+} */
+
+.sub__title {
+    color: #262629;
+    font-family: "Raleway", sans-serif;
+    margin: 0 10px 0 0;
+    text-align: center;
+}
+
+.sub__header {
+    display: flex;
+}
+
+.sub__nav {
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+.footer__down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 25px;
+}
+
+.footer__right {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.footer__right:hover, .footer__button {
+    cursor: pointer;
+}
+
+.footer__button {
+    background-color: #eaeaea;
+    border: none;
+    color: #262629;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    outline: none;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__title {
+    color: #000;
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: "Raleway", sans-serif;
+    padding-left: 10px;
+}
+
+/* media querry */
+
+@media screen and (max-width:1099px) {
+    .header__inner {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header__nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .intro__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .games__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+        justify-content: center;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .mobile__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+        justify-content: center;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .main__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main__items {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+    .main__cards {
+        display: none;
+    }
+    .border__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .title-320 {
+        display: none;
+    }
+    .games__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .mobile__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .intro__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        justify-content: center;
+        padding-top: 20px;
+        margin: 0 50px;
+    }
+    .sub__inner {
+        display: flex;
+        margin: 20px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__down {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sub__inner {
+        display: flex;
+        margin: 40px 0;
+        text-align: center;
+    }
+    .sub__title {
+        color: #262629;
+        font-family: "Raleway", sans-serif;
+        margin: 0 10px 0 0;
+        text-align: center;
+    }
+    .footer__logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .border__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .border__logo {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .header__logo {
+        flex-wrap: wrap;
+    }
+    .subscribe {
+        background: none;
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 10px;
+        font-size: 14px;
+        transition: transform .2s linear;
+    }
+    .news {
+        margin: 50px 0 25px 0;
+    }
+}
+
+@media screen and (max-width:627px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .burger-menu {
+        display: inherit;
+        width: 60px;
+        align-items: center;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .header {
+        background: url("img/mobile\ media\ querry.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 80px;
+    }
+    .header__logo {
+        margin-left: 0;
+    }
+    .header__img {
+        width: 60px;
+        margin: 10px 0 10px 10px;
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .header__title {
+        display: none;
+    }
+    .header-320 {
+        display: inherit;
+        width: 100px;
+        margin: 20px 5px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .main__button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .main__button2 {
+        border: 2px solid #fff;
+        transition: transform .2s linear;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header__logo {
+        margin-left: 0;
+    }
+    .header__img {
+        width: 60px;
+        margin: 10px 0 10px 10px;
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .header-320 {
+        display: inherit;
+        width: 60px;
+        margin: 20px 20px;
+    }
+    .header__title {
+        display: none;
+    }
+    .header {
+        background: url("img/mobile\ media\ querry.jpg");
+        background-repeat: no-repeat;
+        height: 60px;
+    }
+}

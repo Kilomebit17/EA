@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: .75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #091219;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #262629;
+    border-radius: 2px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+/* container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* * * * */
+.header {
+    background: #1e272e;
+}
+.header__img {
+    width: 80px;
+    height: 80px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.header__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    margin-left: 5px;
+    color: white;
+    padding-bottom: 4px;
+    transition: border .1s linear;
+}
+.header-icons {
+    display: none;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+.sign__in {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: margin .1s, border .1s linear;
+}
+
+.sign__in:hover, .sign__up:hover {
+    cursor: pointer;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    border-bottom: 3px solid #fff;
+}
+
+.sign__up {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    transition: margin .1s linear;
+}
+.nav {
+    margin-left: 10px;
+}
+.nav__link {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family:"Raleway",sans-serif;
+    transition:border .1s linear;
+}
+.nav__link:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+/* news */
+.news {
+    width: 100%;
+}
+.news-bg {
+    background-image: url("https://picfiles.alphacoders.com/284/284790.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color:#091219;
+}
+.news__paragraph {
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+.news__itm {
+    padding: 80px 0;
+}
+.news__h1 {
+    font-family:"Roboto",sans-serif;
+    margin:20px 0 40px 0;
+}
+
+.news__border {
+    height: 6px;
+    width: 300px;
+    background-color: #fff;
+}
+/* news intro */
+.news__intro {
+    background-color: #161616;
+}
+.intro__img {
+    width: 100%;
+}
+.intro__inner {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    padding-top: 20px;
+}
+.intro__data {
+    color: #fafa20;
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+}
+.intro__block {
+    background-color: #262629;
+    transition:.2s linear;
+}
+.block__inner {
+    padding: 40px 24px;
+}
+.intro__h2 {
+    margin: 5px 0 10px 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.intro__p {
+    font-family: "Roboto",sans-serif; 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.intro__block:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:1299px) {
+
+}
+@media screen and (max-width:1199px) {
+    .header__right {
+        display: none;
+    }
+    .header-icons {
+        display: inherit;
+        display: flex;
+        align-items: center;
+    }
+    .far, .fas {
+        cursor: pointer;
+    }
+    .far {
+        margin-right: 20px;
+    }
+    .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .intro__inner {
+        display: grid;
+        grid-template-columns:repeat( auto-fit, minmax(320px,1fr) );
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:550px) {
+    .nav {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        max-width:500px;
+        margin: 0 auto;
+    }
+} 
