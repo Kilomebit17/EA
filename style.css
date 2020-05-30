@@ -96,7 +96,6 @@ p {
     padding-left: 10px;
     font-size: 30px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .title-320 {
@@ -477,7 +476,7 @@ p {
 
 .music__inner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     justify-content: center;
     grid-gap: 10px;
     justify-items: center;
@@ -802,11 +801,7 @@ p {
     .header__inner {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         align-items: center;
-    }
-    .header__logo {
-        flex-wrap: wrap;
     }
     .subscribe {
         background: none;
@@ -821,11 +816,6 @@ p {
     }
 }
 
-@media screen and (max-width:627px) {
-    .nav {
-        display: none;
-    }
-}
 @media screen and (max-width:769px){
     .header-menu {
         height: 6px;
@@ -841,14 +831,21 @@ p {
         justify-content: space-between;
         align-items: center;
     }
-    .nav__link {
-        font-size: 16px;
-        display: inline-block;
+    .burger__nav {
+        transition:transform .2s linear;
+        transform: scaleX(0) translateX(10px);
+        opacity: 0;
+        transform-origin:right center;
+    }
+    .burger__nav-active {
+        transform: scaleX(1) translateX(0);
+        opacity: 1;
     }
     .burger__link {
-        margin:0 10px 0 0;
+        margin:0 10px 0;
         color: #FFF;
         font-size: 20px;
+        font-weight: 600;
         font-family: "Raleway", sans-serif;
     }
     .header-menu span::before,
@@ -895,6 +892,13 @@ p {
         border-radius: 20px;
         position: relative;
         right: 0;
+    }   
+    .burger__link {
+        color: #000;
+        font-size: 18px;
+    }
+    .burger__link {
+        color: #000;
     }
     .header-menu span::before,
     .header-menu span::after {
